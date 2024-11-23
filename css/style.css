@@ -1,0 +1,1218 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+/*Fold area*/
+.container {
+  width: 100%;
+  background-image: url(../images/hero\ img.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.container .opacity {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: inherit;
+}
+/*Navbar*/
+.container .opacity .nav {
+  width: 1150px;
+  margin: auto;
+  padding: 10px 40px 10px 10px;
+}
+@media screen and (max-width: 1200px) {
+  .container .opacity .nav {
+    width: 990px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container .opacity .nav {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .container .opacity .nav {
+    width: 100%;
+  }
+}
+
+.container .opacity .nav .logo {
+  width: 20%;
+  float: left;
+  padding: 10px 0 10px 40px;
+}
+.container .opacity .nav .logo a {
+  color: #ff305b;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+}
+@media screen and (max-width: 270px) {
+  .container .opacity .nav .logo {
+    padding-left: 0;
+  }
+}
+.container .opacity .nav .links {
+  width: 80%;
+  float: left;
+}
+.container .opacity .nav .links .navLinks {
+  list-style: none;
+  float: right;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container .opacity .nav .links i {
+  color: white;
+  margin-top: 15px;
+  font-size: 25px;
+  float: right;
+  display: none;
+}
+@media screen and (max-width: 778px) {
+  .container .opacity .nav .links .navLinks {
+    display: none;
+  }
+  .container .opacity .nav .links i {
+    display: block;
+  }
+}
+.container .opacity .nav .links .navLinks li {
+  float: left;
+  margin: 0 10px;
+  height: inherit;
+}
+.container .opacity .nav .links .navLinks li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.893);
+  font-weight: 300;
+  transition: color 1s;
+}
+.container .opacity .nav .links .navLinks li .home {
+  color: #ff305b;
+}
+
+.container .opacity .nav .links .navLinks li:hover a {
+  color: #ff305b;
+}
+
+.clr {
+  clear: both;
+}
+/*Home section*/
+.container .opacity .hint {
+  color: white;
+  width: 80%;
+  margin: 200px auto;
+  text-align: center;
+}
+.container .opacity .hint h1 {
+  font-size: 65px;
+  text-transform: uppercase;
+  color: #ff305b;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.container .opacity .hint .helloIam {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.container .opacity .hint .job {
+  font-size: 24px;
+  font-weight: 100;
+  text-transform: capitalize;
+}
+.container .opacity .hint .job span {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 778px) {
+  .container .opacity .hint {
+    margin-top: 300px;
+  }
+  .container .opacity .hint h1 {
+    font-size: 35px;
+  }
+  .container .opacity .hint .helloIam {
+    font-size: 20px;
+  }
+  .container .opacity .hint .job {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .container .opacity .hint .job span {
+    font-size: 20px;
+  }
+}
+/*Hello section*/
+.hello {
+  width: 100%;
+}
+.hello .centerHello {
+  width: 90%;
+  margin: auto;
+  padding: 80px 0;
+}
+
+.hello .centerHello .photoSection {
+  float: left;
+  width: 50%;
+  padding-right: 100px;
+}
+.hello .centerHello .photoSection .blackBorder {
+  border: 10px solid #444;
+  width: 70%;
+  margin-left: auto;
+  border-radius: 10px;
+}
+
+.hello .centerHello .photoSection .blackBorder .photoAndAccounts {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.hello .centerHello .photoSection .blackBorder .photoAndAccounts img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.hello .centerHello .photoSection .blackBorder .photoAndAccounts .rdamAccounts {
+  width: 100%;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.492);
+  text-align: center;
+  height: 100%;
+  line-height: 30;
+  position: absolute;
+  top: 100%;
+  transition: top 0.5s;
+}
+.hello
+  .centerHello
+  .photoSection
+  .blackBorder
+  .photoAndAccounts:hover
+  .rdamAccounts {
+  top: 0;
+}
+.hello
+  .centerHello
+  .photoSection
+  .blackBorder
+  .photoAndAccounts
+  .rdamAccounts
+  a
+  i {
+  margin: 0 10px;
+  color: white;
+  transition: color 0.3s;
+}
+
+.hello
+  .centerHello
+  .photoSection
+  .blackBorder
+  .photoAndAccounts
+  .rdamAccounts
+  a:hover
+  i {
+  color: #ff305b;
+}
+
+.hello .centerHello .contentSection {
+  float: left;
+  width: 50%;
+}
+
+.hello .centerHello .contentSection h2 {
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-top: 0;
+  line-height: 1;
+}
+.hello .centerHello .contentSection h2::before {
+  content: "";
+  margin-right: 10px;
+  border-left: solid 5px #ff305b;
+}
+.hello .centerHello .contentSection h2::after {
+  content: ",";
+  font-size: 40px;
+}
+.hello .centerHello .contentSection p {
+  color: gray;
+  line-height: 1.6;
+  width: 100%;
+}
+.hello .centerHello .contentSection .hr {
+  border-bottom: dashed 1px gray;
+  margin-top: 25px;
+}
+.hello .centerHello .contentSection .uls {
+  width: 100%;
+}
+.hello .centerHello .contentSection .uls ul {
+  float: left;
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+.hello .centerHello .contentSection .uls .firstUl {
+  padding-right: 20px;
+}
+.hello .centerHello .contentSection .uls .secondUl {
+  padding-left: 20px;
+}
+.hello .centerHello .contentSection .uls ul li {
+  margin-top: 25px;
+}
+.hello .centerHello .contentSection .uls ul li span {
+  font-weight: 500;
+}
+.hello .centerHello .contentSection .btns button {
+  padding: 15px 20px;
+  font-size: 17px;
+  margin-right: 10px;
+  border-radius: 5px;
+  color: white;
+  background-color: #ff305b;
+  border: none;
+  transition: background-color 0.5s;
+  cursor: pointer;
+}
+.hello .centerHello .contentSection .btns button:hover {
+  background-color: rgb(213, 0, 0);
+}
+@media screen and (max-width: 1250px) {
+  .hello .centerHello {
+    width: 95%;
+  }
+  .hello .centerHello .contentSection h2 {
+    margin-bottom: 0;
+  }
+  .hello .centerHello .contentSection .uls ul {
+    margin-top: 0;
+  }
+  .hello .centerHello .contentSection .hr {
+    margin-top: 0;
+  }
+  .hello
+    .centerHello
+    .photoSection
+    .blackBorder
+    .photoAndAccounts
+    .rdamAccounts {
+    line-height: 27;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .hello .centerHello .contentSection .uls ul {
+    margin-bottom: 15px;
+  }
+  .hello .centerHello .contentSection .uls ul li {
+    margin-top: 15px;
+  }
+  .hello .centerHello .photoSection .blackBorder {
+    width: 80%;
+  }
+  .hello
+    .centerHello
+    .photoSection
+    .blackBorder
+    .photoAndAccounts
+    .rdamAccounts {
+    line-height: 30;
+  }
+}
+@media screen and (max-width: 1055px) {
+  .hello .centerHello .photoSection .blackBorder {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .hello .centerHello .photoSection .blackBorder {
+    border: none;
+  }
+  .hello .centerHello .photoSection .blackBorder .photoAndAccounts {
+    top: 0;
+  }
+  .hello .centerHello .photoSection .blackBorder {
+    width: 100%;
+  }
+  .hello .centerHello .photoSection {
+    padding-right: 50px;
+  }
+  .hello
+    .centerHello
+    .photoSection
+    .blackBorder
+    .photoAndAccounts
+    .rdamAccounts {
+    line-height: 25;
+  }
+}
+@media screen and (max-width: 830px) {
+  .hello .centerHello .contentSection .uls .firstUl {
+    font-size: 14px;
+    padding-right: 10px;
+  }
+  .hello .centerHello .contentSection .uls .secondUl {
+    font-size: 14px;
+    padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hello .centerHello {
+    width: 60%;
+    margin: auto;
+  }
+  .hello .centerHello .photoSection {
+    width: 100%;
+    padding-right: 0;
+  }
+  .hello .centerHello .photoSection .blackBorder {
+    width: 90%;
+    margin: auto;
+  }
+  .hello .centerHello .contentSection {
+    width: 100%;
+    padding: 25px 0 0 40px;
+    margin: auto;
+  }
+  .hello .centerHello .contentSection .uls .firstUl {
+    font-size: 16px;
+    padding-right: 0;
+    width: 100%;
+  }
+  .hello .centerHello .contentSection .uls .secondUl {
+    font-size: 16px;
+    padding-left: 0;
+    width: 100%;
+  }
+  .hello .centerHello .contentSection .uls .firstUl {
+    margin-bottom: 0;
+  }
+  .hello
+    .centerHello
+    .photoSection
+    .blackBorder
+    .photoAndAccounts
+    .rdamAccounts {
+    line-height: 30;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .hello .centerHello {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 455px) {
+  .hello .centerHello {
+    width: 80%;
+  }
+  .hello .centerHello .contentSection .btns button {
+    padding: 10px;
+    font-size: 14px;
+    margin-right: 5px;
+  }
+  .hello
+    .centerHello
+    .photoSection
+    .blackBorder
+    .photoAndAccounts
+    .rdamAccounts {
+    line-height: 25;
+  }
+}
+@media screen and (max-width: 350px) {
+  .hello .centerHello {
+    width: 98%;
+  }
+  .hello .centerHello .photoSection {
+    padding-right: 25px;
+  }
+  .hello .centerHello .photoSection .blackBorder {
+    width: 100%;
+    margin: auto;
+  }
+  .hello .centerHello .contentSection {
+    padding-left: 20px;
+  }
+}
+/*Our services section*/
+.ourServices {
+  background-color: #eee;
+  padding: 50px 0;
+}
+.ourServices .centerOurServices {
+  width: 80%;
+  margin: auto;
+}
+.ourServices .centerOurServices h2 {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 40px;
+  position: relative;
+  color: #444444;
+}
+.ourServices .centerOurServices h2::before {
+  content: "";
+  border-bottom: solid 1px #ff305b;
+  border-top: solid 1px #ff305b;
+  width: 75px;
+  height: 10px;
+  position: absolute;
+  top: 100%;
+  left: 35%;
+}
+.ourServices .centerOurServices h2::after {
+  content: "";
+  border-bottom: solid 1px #ff305b;
+  width: 150px;
+  height: 15px;
+  position: absolute;
+  top: 80%;
+  right: 16%;
+}
+
+.ourServices .centerOurServices .uiUxDesign,
+.ourServices .centerOurServices .appDevelopment,
+.ourServices .centerOurServices .productDesign,
+.ourServices .centerOurServices .uiUxDesign {
+  width: 25%;
+  float: left;
+  text-align: center;
+  padding: 30px 10px;
+  transition: box-shadow 0.5s, background-color 0.5s;
+}
+.ourServices .centerOurServices div:hover {
+  box-shadow: 0px 0px 15px -9px;
+  background-color: white;
+}
+
+.ourServices .centerOurServices div i {
+  color: #ff305b;
+  font-size: 30px;
+  transition: transform 0.5s;
+}
+.ourServices .centerOurServices div:hover i {
+  transform: scale(1.3);
+}
+.ourServices .centerOurServices div h3 {
+  font-size: 20px;
+  color: rgb(78, 78, 78);
+}
+.ourServices .centerOurServices div p {
+  line-height: 1.6;
+  color: gray;
+}
+@media screen and (max-width: 1050px) {
+  .ourServices .centerOurServices div h3 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .ourServices .centerOurServices .uiUxDesign,
+  .ourServices .centerOurServices .appDevelopment,
+  .ourServices .centerOurServices .productDesign,
+  .ourServices .centerOurServices .uiUxDesign {
+    width: 50%;
+  }
+  .ourServices .centerOurServices h2 {
+    font-size: 35px;
+  }
+  .ourServices .centerOurServices h2::after {
+    top: 78%;
+    right: 9%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .ourServices .centerOurServices .uiUxDesign,
+  .ourServices .centerOurServices .appDevelopment,
+  .ourServices .centerOurServices .productDesign,
+  .ourServices .centerOurServices .uiUxDesign {
+    width: 100%;
+    padding: 30px;
+  }
+  .ourServices .centerOurServices h2 {
+    font-size: 30px;
+  }
+  .ourServices .centerOurServices h2::after {
+    top: 74%;
+    right: 0%;
+  }
+}
+/*Our protofolio section*/
+.ourPortfolio {
+  width: 80%;
+  margin: auto;
+  padding: 100px 0;
+}
+
+.ourPortfolio h2 {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 40px;
+  position: relative;
+  color: #444444;
+}
+.ourPortfolio h2::before {
+  content: "";
+  border-bottom: solid 1px #ff305b;
+  border-top: solid 1px #ff305b;
+  width: 75px;
+  height: 10px;
+  position: absolute;
+  top: 100%;
+  left: 35%;
+}
+.ourPortfolio h2::after {
+  content: "";
+  border-bottom: solid 1px #ff305b;
+  width: 150px;
+  height: 15px;
+  position: absolute;
+  top: 80%;
+  right: 16%;
+}
+.ourPortfolio ul {
+  list-style: none;
+  width: fit-content;
+  margin: auto;
+  overflow: hidden;
+  padding-left: 0;
+}
+.ourPortfolio ul li {
+  float: left;
+  margin: 20px 15px;
+}
+.ourPortfolio ul .all {
+  color: #ff305b;
+}
+.ourPortfolio .photos .clock,
+.ourPortfolio .photos .watch,
+.ourPortfolio .photos .twoCards,
+.ourPortfolio .photos .shoes,
+.ourPortfolio .photos .oneCard,
+.ourPortfolio .photos .router {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+.ourPortfolio .photos .clock div,
+.ourPortfolio .photos .watch div,
+.ourPortfolio .photos .twoCards div,
+.ourPortfolio .photos .shoes div,
+.ourPortfolio .photos .oneCard div,
+.ourPortfolio .photos .router div {
+  position: relative;
+}
+.ourPortfolio .photos div div img {
+  width: 100%;
+}
+.ourPortfolio .photos .clock div div,
+.ourPortfolio .photos .watch div div,
+.ourPortfolio .photos .twoCards div div,
+.ourPortfolio .photos .shoes div div,
+.ourPortfolio .photos .oneCard div div,
+.ourPortfolio .photos .router div div {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.595);
+  padding: 10px;
+  text-align: right;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.ourPortfolio .photos div div div i {
+  color: #ff305b;
+  position: absolute;
+  top: 85%;
+  right: 7%;
+}
+.ourPortfolio .photos div div div:hover {
+  opacity: 1;
+}
+@media screen and (max-width: 992px) {
+  .ourPortfolio .photos .clock,
+  .ourPortfolio .photos .watch,
+  .ourPortfolio .photos .twoCards,
+  .ourPortfolio .photos .shoes,
+  .ourPortfolio .photos .oneCard,
+  .ourPortfolio .photos .router {
+    width: 50%;
+  }
+  .ourPortfolio h2 {
+    font-size: 35px;
+  }
+  .ourPortfolio h2::after {
+    top: 78%;
+    right: 9%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .ourPortfolio .photos .clock,
+  .ourPortfolio .photos .watch,
+  .ourPortfolio .photos .twoCards,
+  .ourPortfolio .photos .shoes,
+  .ourPortfolio .photos .oneCard,
+  .ourPortfolio .photos .router {
+    width: 100%;
+  }
+  .ourPortfolio h2 {
+    font-size: 30px;
+  }
+  .ourPortfolio h2::after {
+    top: 74%;
+    right: 0%;
+  }
+}
+@media screen and (max-width: 460px) {
+  .ourPortfolio {
+    width: 90%;
+    padding: 80px 0;
+  }
+  .ourPortfolio ul li {
+    font-size: 14px;
+    margin: 20px 7px;
+  }
+}
+/*Team,Projects,Downloaded,Lines of code section*/
+.counters {
+  background-color: #eee;
+  padding: 80px 200px;
+  overflow: hidden;
+}
+.counters div {
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+
+.counters div i {
+  font-size: 35px;
+  color: #ff305b;
+}
+
+.counters div h3 {
+  font-size: 25px;
+  margin-bottom: 0;
+}
+
+.counters div p {
+  font-weight: 500;
+  color: gray;
+}
+@media screen and (max-width: 1200px) {
+  .counters {
+    padding: 80px 100px;
+  }
+}
+@media screen and (max-width: 810px) {
+  .counters {
+    padding: 80px 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .counters div {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+}
+/*Client's feedback section*/
+.feedback {
+  padding: 100px 0;
+}
+.feedback h2 {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 40px;
+  position: relative;
+  color: #444444;
+}
+.feedback h2::before {
+  content: "";
+  border-bottom: solid 1px #ff305b;
+  border-top: solid 1px #ff305b;
+  width: 75px;
+  height: 10px;
+  position: absolute;
+  top: 100%;
+  left: 35%;
+}
+.feedback h2::after {
+  content: "";
+  border-bottom: solid 1px #ff305b;
+  width: 150px;
+  height: 15px;
+  position: absolute;
+  top: 80%;
+  right: 29%;
+}
+
+.feedback .rectangular {
+  width: 900px;
+  margin: auto;
+  background-color: #eee;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.feedback .rectangular .photo {
+  width: 30%;
+  float: left;
+  position: relative;
+}
+.feedback .rectangular .photo .transform {
+  background-color: #ff305b;
+  height: 200px;
+  transform: rotate(-45deg);
+  position: relative;
+  top: -80px;
+  left: -110px;
+}
+
+.feedback .rectangular .photo .alexPhoto {
+  width: 140px;
+  height: 140px;
+  margin: -160px auto 0;
+  background-image: url(../images/feedback.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  position: relative;
+  z-index: 5;
+}
+.feedback .rectangular .content {
+  width: 70%;
+  float: left;
+  padding: 30px 0;
+}
+.feedback .rectangular .content h3 {
+  color: #444;
+  font-size: 25px;
+}
+
+.feedback .rectangular .content p {
+  color: gray;
+}
+.feedback .rectangular .content .article {
+  line-height: 1.6;
+  width: 90%;
+}
+
+.feedback .rectangular .content .stars {
+  color: gold;
+}
+.feedback .twoDots {
+  width: fit-content;
+  margin: auto;
+}
+.feedback .twoDots .big {
+  height: 10px;
+  width: 30px;
+  background-color: #ff305b;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.feedback .twoDots .small {
+  height: 12px;
+  width: 12px;
+  border: 1px solid #ff305b;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1030px) {
+  .feedback .rectangular {
+    width: 800px;
+  }
+  .feedback .rectangular .photo .transform {
+    top: -88px;
+    left: -105px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .feedback h2 {
+    font-size: 35px;
+  }
+  .feedback h2::after {
+    top: 76%;
+    right: 22%;
+  }
+}
+@media screen and (max-width: 860px) {
+  .feedback .rectangular {
+    width: 700px;
+  }
+  .feedback .rectangular .photo .transform {
+    top: -98px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .feedback h2 {
+    font-size: 30px;
+  }
+  .feedback h2::after {
+    top: 73%;
+    right: 15%;
+  }
+  .feedback .rectangular {
+    width: 80%;
+  }
+  .feedback .rectangular .photo {
+    width: 100%;
+    float: none;
+  }
+
+  .feedback .rectangular .content {
+    width: 100%;
+    float: none;
+    padding: 15px;
+  }
+  .feedback .rectangular .photo .transform {
+    top: -40px;
+    left: -300px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .feedback .rectangular .photo .transform {
+    left: -250px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .feedback .rectangular .photo .transform {
+    top: -90px;
+    left: -200px;
+  }
+}
+@media screen and (max-width: 305px) {
+  .feedback .rectangular {
+    width: 95%;
+  }
+}
+/*Our blog section*/
+.ourBlog {
+  background-color: #eee;
+  padding: 100px 0;
+}
+.ourBlog h2 {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 40px;
+  position: relative;
+  color: #444444;
+}
+.ourBlog h2::before {
+  content: "";
+  border-bottom: solid 1px #ff305b;
+  border-top: solid 1px #ff305b;
+  width: 75px;
+  height: 10px;
+  position: absolute;
+  top: 100%;
+  left: 28%;
+}
+.ourBlog h2::after {
+  content: "";
+  border-bottom: solid 1px #ff305b;
+  width: 150px;
+  height: 15px;
+  position: absolute;
+  top: 80%;
+  right: 1%;
+}
+.ourBlog .centerOurBlog {
+  width: 80%;
+  margin: auto;
+}
+.ourBlog .centerOurBlog .girl,
+.ourBlog .centerOurBlog .iframe,
+.ourBlog .centerOurBlog .man {
+  width: 33.33%;
+  float: left;
+  padding: 20px;
+}
+.ourBlog .centerOurBlog .girl .backgroundWhite,
+.ourBlog .centerOurBlog .iframe .backgroundWhite,
+.ourBlog .centerOurBlog .man .backgroundWhite {
+  background-color: white;
+}
+.ourBlog .centerOurBlog div div div img {
+  width: 100%;
+}
+.ourBlog .centerOurBlog div div .envatoVideo {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+}
+.ourBlog .centerOurBlog div div .envatoVideo iframe {
+  position: absolute;
+  top: 0;
+  height: 0;
+  width: 100%;
+  height: 100%;
+}
+.ourBlog .centerOurBlog div div .contentGirlPhoto,
+.ourBlog .centerOurBlog div div .contentIframe,
+.ourBlog .centerOurBlog div div .contentManPhoto {
+  padding: 20px;
+}
+.ourBlog .centerOurBlog div div div .history {
+  font-size: 18px;
+  color: gray;
+}
+.ourBlog .centerOurBlog div div div .words {
+  color: gray;
+  font-size: 17px;
+  line-height: 1.4;
+}
+.ourBlog .centerOurBlog div div div a {
+  color: black;
+  text-decoration: none;
+}
+.ourBlog .centerOurBlog div div div a h3 {
+  font-size: 23px;
+  font-weight: 500;
+  margin: 0;
+  transition: color 0.5s;
+}
+.ourBlog .centerOurBlog div div div a:hover h3 {
+  color: #ff305b;
+}
+.ourBlog .centerOurBlog div div div a .readMore {
+  font-size: 18px;
+  font-weight: 300;
+  transition: color 0.5s;
+}
+.ourBlog .centerOurBlog div div div a:hover .readMore {
+  color: #ff305b;
+}
+@media screen and (max-width: 1200px) {
+  .ourBlog .centerOurBlog {
+    width: 95%;
+  }
+  .ourBlog .centerOurBlog div div div a h3 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ourBlog .centerOurBlog {
+    width: 80%;
+  }
+  .ourBlog h2 {
+    font-size: 30px;
+  }
+  .ourBlog h2::before {
+    left: 20%;
+  }
+  .ourBlog h2::after {
+    top: 73%;
+    left: -8%;
+  }
+  .ourBlog .centerOurBlog .girl,
+  .ourBlog .centerOurBlog .iframe,
+  .ourBlog .centerOurBlog .man {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .ourBlog .centerOurBlog {
+    width: 95%;
+  }
+  .ourBlog .centerOurBlog div div div a .readMore {
+    font-size: 16px;
+  }
+}
+/*Contact us Section*/
+.contactUs {
+  padding: 80px 0;
+}
+.contactUs .centerContactUs {
+  width: 50%;
+  margin: auto;
+}
+.contactUs .centerContactUs h2 {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 40px;
+  position: relative;
+  color: #444444;
+}
+.contactUs .centerContactUs h2::before {
+  content: "";
+  border-bottom: solid 1px #ff305b;
+  border-top: solid 1px #ff305b;
+  width: 75px;
+  height: 10px;
+  position: absolute;
+  top: 100%;
+  left: 28%;
+}
+.contactUs .centerContactUs h2::after {
+  content: "";
+  border-bottom: solid 1px #ff305b;
+  width: 150px;
+  height: 15px;
+  position: absolute;
+  top: 80%;
+  left: 9%;
+}
+.contactUs .centerContactUs form .name,
+.contactUs .centerContactUs form .email {
+  width: 50%;
+  float: left;
+  padding: 20px;
+}
+.contactUs .centerContactUs form .subject,
+.contactUs .centerContactUs form .textarea,
+.contactUs .centerContactUs form .submit {
+  width: 100%;
+  padding: 20px;
+}
+.contactUs .centerContactUs form .name #nameInp,
+.contactUs .centerContactUs form .email #emailInp,
+.contactUs .centerContactUs form .subject #subjectInp,
+.contactUs .centerContactUs form .textarea textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  outline: none;
+  border: solid 1px rgb(209, 209, 209);
+  border-radius: 5px;
+  transition: border-color 0.5s;
+  font-family: "Roboto", sans-serif;
+}
+.contactUs .centerContactUs form .textarea textarea {
+  padding: 10px 10px 30px;
+  resize: none;
+}
+.contactUs .centerContactUs form .name #nameInp:focus,
+.contactUs .centerContactUs form .email #emailInp:focus,
+.contactUs .centerContactUs form .subject #subjectInp:focus {
+  border-color: #ff305b;
+}
+.contactUs .centerContactUs form .subject #emailInp {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  outline: none;
+  border-radius: 5px;
+}
+.contactUs .centerContactUs form .submit #submitInp {
+  color: white;
+  background-color: #ff305b;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: not-allowed;
+}
+@media screen and (max-width: 1200px) {
+  .contactUs .centerContactUs {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .contactUs .centerContactUs {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contactUs .centerContactUs h2 {
+    font-size: 30px;
+  }
+  .contactUs .centerContactUs h2::before {
+    left: 19%;
+  }
+  .contactUs .centerContactUs h2::after {
+    top: 73%;
+    left: -3%;
+  }
+  .contactUs .centerContactUs form .name,
+  .contactUs .centerContactUs form .email {
+    width: 100%;
+    float: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .contactUs .centerContactUs {
+    width: 95%;
+  }
+  .contactUs .centerContactUs form .name,
+  .contactUs .centerContactUs form .email {
+    width: 100%;
+    float: none;
+    padding: 10px;
+  }
+  .contactUs .centerContactUs form .subject,
+  .contactUs .centerContactUs form .textarea,
+  .contactUs .centerContactUs form .submit {
+    padding: 10px;
+  }
+}
+/*Footer*/
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 70px 0 50px;
+}
+.footer .centerFooter {
+  width: 80%;
+  margin: auto;
+}
+.footer .centerFooter .icons {
+  margin-bottom: 30px;
+}
+.footer .centerFooter .icons a {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  transition: color 0.5s;
+}
+.footer .centerFooter .icons a:hover {
+  color: #ff305b;
+}
+.footer .centerFooter p a {
+  white-space: nowrap;
+  text-decoration: none;
+  color: #ff305b;
+}
+
+.footer .centerFooter p a:hover {
+  text-decoration: underline;
+}
